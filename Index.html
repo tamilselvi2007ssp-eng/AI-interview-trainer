@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Interview Trainer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>🤖 AI Interview Trainer</h1>
+        <p>Practice your interview and improve your confidence!</p>
+
+        <div class="card">
+            <label>Enter Your Name</label>
+            <input type="text" id="name" placeholder="Your name">
+
+            <label>Select Job Role</label>
+            <select id="role">
+                <option>Software Developer</option>
+                <option>Python Developer</option>
+                <option>Web Developer</option>
+                <option>Data Analyst</option>
+            </select>
+
+            <button onclick="startInterview()">Start Interview</button>
+        </div>
+
+        <div class="interview" id="interviewBox">
+            <h2 id="welcome"></h2>
+
+            <h3 id="question"></h3>
+
+            <textarea id="answer"
+                placeholder="Type your answer here..."></textarea>
+
+            <button onclick="submitAnswer()">Submit Answer</button>
+
+            <div id="feedback"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</html>
+
+</body>
